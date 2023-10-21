@@ -6,7 +6,7 @@ A React library for creating custom Select components.
 - npm
 
 ## Repository
-- [react-library-senga](https://github.com/senga200/Select_Component_src)
+- [react-library-senga](https://github.com/senga200/hrNet-component)
 
 ## CodeSandbox 
 [try it on CodeSandBox](https://codesandbox.io/s/react-component-select-npmpackage-xxr5lx?file=/src/App.js:0-649)
@@ -14,12 +14,12 @@ A React library for creating custom Select components.
 ## installation
 install with npm:
 ```bash 
-npm install react-library-senga
+npm install react-select-for-hrnet
 ```
 
 install with yarn:
 ```bash 
-yarn add react-library-senga
+yarn add react-select-for-hrnet
 ```
 
 ### using options
