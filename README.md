@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# react-library-senga
+A React library for creating custom Select components.
+## prerequisites
+- react
+- react-dom
+- npm
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Repository
+- [react-library-senga](https://github.com/senga200/Select_Component_src)
 
-## Available Scripts
+## CodeSandbox 
+[try it on CodeSandBox](https://codesandbox.io/s/react-component-select-npmpackage-xxr5lx?file=/src/App.js:0-649)
 
-In the project directory, you can run:
+## installation
+install with npm:
+```bash 
+npm install react-library-senga
+```
 
-### `npm start`
+install with yarn:
+```bash 
+yarn add react-library-senga
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### using options
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You can pass an array of options to the options prop to define the possible choices in the dropdown menu. Each option should have a value and a label. Here's an example:
 
-### `npm test`
+```jsx
+import React from 'react';
+//import the Select component 
+import Select from 'react-select-for-hrnet';
+//import the css file
+import "react-select-for-hrnet/src/Select.css";
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+function MySelect(){
+  //customise your options
+   const optionList = [
+      {value: 'option1', label: 'Option 1'},
+      {value: 'option2', label: 'Option 2'},
+      {value: 'option3', label: 'Option 3'},
+   ];
 
-### `npm run build`
+    return (
+        <Select
+        options={optionList}
+        />
+    );
+}
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+export default MySelect;
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### customising the select
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+in your css file, you can customise the select component by using the following classes:
+```css	
 
-### `npm run eject`
+.selectInput {
+  color: lightgray;
+  border-radius: 5px;
+}
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+.selectInput:hover {
+  background-color: lightblue;
+}
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

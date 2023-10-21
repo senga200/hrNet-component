@@ -1,5 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+src/react-library/node_modules/
 # dependencies
 /node_modules
 /.pnp
@@ -21,3 +21,28 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+## the src folder
+src
+.babelrc
+rollup.config.js
+## node modules folder
+node_modules
+
+## incase you have a git repositiory initiated
+.git
+.gitignore
+CVS
+.svn
+.hg
+.lock-wscript
+.wafpickle-N
+.DS_Store
+npm-debug.log
+.npmrc
+
+
+config.gypi
+package-lock.json
